@@ -9,13 +9,7 @@ import (
 	"os"
 )
 
-func check(e error) {
-	if e != nil {
-		panic(e)
-	}
-}
-
-func main() {
+func day1() {
 	file, err := os.Open("./inputs/day1.txt")
 	check(err)
 	defer file.Close()
